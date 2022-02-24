@@ -16,12 +16,18 @@ import reactor.core.publisher.Mono;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/retreat")
-public class RetreatsController {
-
-	private final IRetreatdb serviceRetreat;
-
-	@PostMapping
-	public Mono<Account> save(@RequestBody Retreat retreat){
-		return serviceRetreat.send(retreat);
-	}
+public class RetreatsController { 
+    /**
+     * Servicio de retiro.
+     */
+    private final IRetreatdb serviceRetreat;
+    /**
+     * Metodo para salvar los retiros en la entidad movimiento.
+     * @param retreat
+     * @return
+     */
+    @PostMapping
+    public Mono<Account> save(@RequestBody Retreat retreat) {
+        return serviceRetreat.send(retreat);
+    }
 }

@@ -8,6 +8,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 public class Retreat {
-	private String accountnumber;
-	private Long ammount;
+    /**
+     * Variable que almacena el numero de cuenta.
+     */
+    private String accountnumber;
+    /**
+     * Variable que almacena el monto a retirar.
+     */
+    private Long ammount;
 }

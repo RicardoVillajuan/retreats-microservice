@@ -1,7 +1,5 @@
 package com.bank.model;
 
-import java.util.List;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,7 +8,16 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 public class Holders {
-	private String names;
-	private String surnames;
-	private String dni;
+    /**
+     * Variable que almacena el nombre de los holder.
+     */
+    private String names;
+    /**
+     * Variable que almacena el los apelldidos de los holder.
+     */
+    private String surnames;
+    /**
+     * Variable que almacena el dni de los holder.
+     */
+    private String dni;
 }

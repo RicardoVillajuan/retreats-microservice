@@ -10,7 +10,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 public class Authorities {
-
-	List<Holders> holders;//titulares
-	List<Signatories> signatories;// firmantes
+    /**
+     * Variable de tipo lista que almacena los titulares.
+     */
+    private List<Holders> holders; 
+    /**
+     * Variable de tipo lista que almacena los firmantes.
+     */
+    private List<Signatories> signatories; // firmantes
 }
